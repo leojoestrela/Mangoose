@@ -3,4 +3,8 @@
     <string name="title_activity_launcher">LauncherActivity</string>
 
     <string name="logotipo_do_app">Logotipo do app</string>
+    <string name="capa_do_manga">Capa do mangá</string>
+    <string name="feed">feed</string>
+    <string name="favoritos">favoritos</string>
+    <string name="ajustes">ajustes</string>
 </resources>

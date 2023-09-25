@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgMangaCover"
+        android:layout_width="111dp"
+        android:layout_height="127dp"
+        android:layout_marginVertical="14dp"
+        android:layout_marginStart="30dp"
+        android:contentDescription="@string/capa_do_manga"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_mangaplaceholder" />
+
+    <TextView
+        android:id="@+id/tvMangaTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:fontFamily="@font/roboto"
+        android:text="Jojo's Bizarre Adventure"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/imgMangaCover"
+        app:layout_constraintTop_toTopOf="@id/imgMangaCover" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

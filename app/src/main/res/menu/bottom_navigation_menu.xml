@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/page_1"
+        android:id="@+id/item_feed"
         android:enabled="true"
-        android:icon="@drawable/ic_logo"
-        android:title="teste"/>
+        android:icon="@drawable/ic_feed"
+        android:title="@string/feed" />
     <item
-        android:id="@+id/page_2"
+        android:id="@+id/item_favoritos"
         android:enabled="true"
-        android:icon="@drawable/ic_logo"
-        android:title="teste"/>
+        android:icon="@drawable/ic_favoritos"
+        android:title="@string/favoritos" />
+    <item
+        android:id="@+id/item_ajuste"
+        android:enabled="true"
+        android:icon="@drawable/ic_ajustes"
+        android:title="@string/ajustes" />
 </menu>
