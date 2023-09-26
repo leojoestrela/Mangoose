@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.eutropiosaboya.mangoose.R
-import com.eutropiosaboya.mangoose.model.Manga
+import com.eutropiosaboya.mangoose.webservice.model.ResponseMangaAttributes
 
 class MangaListAdapter(
 
-    val mangaList: ArrayList<Manga>,
+    val responseMangaList: ArrayList<ResponseMangaAttributes>,
     val context: Context
 
 ) : RecyclerView.Adapter<MangaListAdapter.MangaViewHolder>() {
@@ -25,18 +25,18 @@ class MangaListAdapter(
     }
 
     override fun getItemCount(): Int {
-        return mangaList.size
+        return responseMangaList.size
     }
 
     override fun onBindViewHolder(holder: MangaListAdapter.MangaViewHolder, position: Int) {
-        holder.bind(mangaList[position])
+        holder.bind(responseMangaList[position])
     }
 
 
     inner class MangaViewHolder(private val binding: View) : RecyclerView.ViewHolder(binding) {
-        fun bind(manga: Manga) {
+        fun bind(responseManga: ResponseMangaAttributes) {
             val title = binding.findViewById<TextView>(R.id.tvMangaTitle)
-            title.text = manga.title
+            title.text = responseManga.title.en
         }
     }
 }
